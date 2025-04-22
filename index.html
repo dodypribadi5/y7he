@@ -36,7 +36,15 @@
 </script>
  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
    </script>
-
+<script>
+let tglNow = new Date();
+let waktuBatas = new Date("2025-05-08T23:59:59");
+if (tglNow.getTime() >= waktuBatas.getTime()) {
+  document.location.href = 'https://expiredweb.pages.dev';
+} else {
+  console.log('Server aktif');
+}
+</script>
 </head>
 <style>
  form {
